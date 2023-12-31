@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*  */
+}
+/* .container {
+  max-width: 1240px;
+  margin: 20px;
+} */
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  /* width: 100%; */
+  background-color: #ffffff;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+.login ul {
+  display: inline-flex;
+  gap: 16px;
+}
+
+.nav > .nav-header > .nav-title {
+  color: #20c6b1;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline-block;
+  font-size: 22px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+.nav .sign-btn {
+  /* display: flex; */
+  justify-content: center;
+  text-align: center;
+  /* width: 100px;
+  height: 40px; */
+  padding: 8px;
+  border-radius: 5px;
+  background: #20c6b1;
+}
+.nav .login-btn {
+  color: #20c6b1;
+  border-radius: 8px;
+  border: 1px solid #20c6b1;
+}
+.nav a {
+  display: inline-block;
+  padding: 8px;
+  text-decoration: none;
+  color: #000;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nav a:hover {
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  background: #20c6b1;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #161515;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #faf4f4;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    gap: 10px;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
