@@ -1,5 +1,7 @@
-import { useState } from "react";
 import "./SignUp.css";
+import { useState } from "react";
+import Authentication from "../../Componets/Authentication/Authentication";
+import { NavLink } from "react-router-dom";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -16,56 +18,64 @@ const SignUp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your signup logic here using formData
+    // Add your form submission logic here
     console.log("Form submitted:", formData);
   };
+
   return (
-    <div>
-      <div className="signup-container">
-        <form className="signup-form" onSubmit={handleSubmit}>
-          <h2>Sign Up</h2>
-          <label htmlFor="name">Name</label>
+    <div className="signup-container">
+      <form onSubmit={handleSubmit}>
+        <label>
+          Name:
           <input
             type="text"
-            id="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            required
           />
-
-          <label htmlFor="email">Email</label>
+        </label>
+        <label>
+          Email:
           <input
             type="email"
-            id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            required
           />
-
-          <label htmlFor="password">Password</label>
+        </label>
+        <label>
+          Password:
           <input
             type="password"
-            id="password"
             name="password"
             value={formData.password}
             onChange={handleChange}
-            required
           />
-
-          <label htmlFor="confirmPassword">Confirm Password</label>
+        </label>
+        <label>
+          Confirm Password:
           <input
             type="password"
-            id="confirmPassword"
             name="confirmPassword"
             value={formData.confirmPassword}
             onChange={handleChange}
-            required
           />
-
-          <button type="submit">Sign Up</button>
-        </form>
+        </label>
+        <button type="submit">Sign Up</button>
+      </form>
+      <div>
+        <Authentication />
+      </div>
+      <div>
+        <h3>
+          Already have an Accountt?{" "}
+          <span>
+            <NavLink to={"/login"}>Login </NavLink>
+          </span>
+        </h3>
+      </div>
+      <div>
+        <NavLink to={"/"}>Go to Home</NavLink>
       </div>
     </div>
   );

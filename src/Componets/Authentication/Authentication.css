@@ -1,0 +1,21 @@
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  margin-top: 20px;
+}
+
+.google-icon,
+.github-icon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.google-icon button:hover {
+  color: #b31e1e;
+}
+
+.github-icon button:hover {
+  color: #211f1f;
+}

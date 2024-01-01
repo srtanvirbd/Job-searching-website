@@ -10,9 +10,9 @@ const Banner = () => {
             <h3>
               We Have <span>208,000+</span> Live Jobs
             </h3>
-            <h2>
+            <h1 className="find">
               Find and Apply for <span>Halal</span> Job that suits you!
-            </h2>
+            </h1>
 
             <p>
               Here you can find your best job, Explore hundreds of jobs with us.

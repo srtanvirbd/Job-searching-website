@@ -8,7 +8,12 @@ const Header = () => {
         <div className="nav">
           <input type="checkbox" id="nav-check" />
           <div className="nav-header">
-            <div className="nav-title">HALAL JIVIKA</div>
+            <div className="nav-title">
+              <img
+                src="../../../public/Screenshot 2024-01-01 101302.png"
+                alt=""
+              />
+            </div>
           </div>
           <div className="nav-btn">
             <label htmlFor="nav-check">

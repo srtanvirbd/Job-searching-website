@@ -33,13 +33,8 @@ body {
 }
 
 .nav > .nav-header > .nav-title {
-  color: #20c6b1;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  display: inline-block;
-  font-size: 22px;
+  width: 200px;
+  height: 30.335px;
 }
 
 .nav > .nav-btn {
@@ -133,5 +128,8 @@ body {
   .nav > #nav-check:checked ~ .nav-links {
     height: calc(100vh - 50px);
     overflow-y: auto;
+  }
+  .nav-links a.active {
+    color: red;
   }
 }
