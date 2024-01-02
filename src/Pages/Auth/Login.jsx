@@ -16,11 +16,10 @@ const Login = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-    setErrors({ ...errors, [name]: "" }); // Clear the error when the user types
+    setErrors({ ...errors, [name]: "" });
   };
 
   const handleLogin = () => {
-    // Validation logic
     const newErrors = {};
     if (!formData.email.trim()) {
       newErrors.email = "Email is required";
@@ -30,12 +29,9 @@ const Login = () => {
     }
 
     if (Object.keys(newErrors).length === 0) {
-      // Successful login logic here
-
-      // Show success message using react-toastify
       toast.success("Login successfully", {
         position: "bottom-center",
-        autoClose: 3000, // Close the toast after 3 seconds
+        autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: false,

@@ -5,7 +5,6 @@ const JobsDetails = () => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    // Fetch only the first 6 jobs
     fetch("http://localhost:9000/jobs")
       .then((response) => response.json())
       .then((data) => setJobs(data))

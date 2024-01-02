@@ -23,7 +23,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validation logic (you can customize this based on your requirements)
     const newErrors = {};
     if (!formData.name.trim()) {
       newErrors.name = "Name is required";
@@ -41,20 +40,15 @@ const Contact = () => {
     }
 
     if (Object.keys(newErrors).length === 0) {
-      // Submit the form or send the data to your backend
-      console.log("Form submitted:", formData);
-
-      // Show success message using react-toastify
       toast.success("Message sent successfully", {
         position: "bottom-center",
-        autoClose: 3000, // Close the toast after 3 seconds
+        autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: false,
         draggable: true,
       });
 
-      // Reset form after successful submission
       setFormData({
         name: "",
         number: "",

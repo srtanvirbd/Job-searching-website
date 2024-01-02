@@ -23,7 +23,6 @@ const SignUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validation logic
     const newErrors = {};
     if (!formData.name.trim()) {
       newErrors.name = "Name is required";
@@ -41,20 +40,17 @@ const SignUp = () => {
     }
 
     if (Object.keys(newErrors).length === 0) {
-      // Successful form submission
       console.log("Form submitted:", formData);
 
-      // Show success message using react-toastify
       toast.success("Sign Up successfully", {
         position: "bottom-center",
-        autoClose: 3000, // Close the toast after 3 seconds
+        autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: false,
         draggable: true,
       });
 
-      // Clear form fields
       setFormData({
         name: "",
         email: "",

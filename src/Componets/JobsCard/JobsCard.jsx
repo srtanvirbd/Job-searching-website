@@ -1,9 +1,28 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react";
 import { FaRegBookmark } from "react-icons/fa";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const JobsCard = ({ job }) => {
+  const [applied, setApplied] = useState(false);
+
+  const handleApplyNow = () => {
+    setApplied(!applied);
+
+    toast.success(applied ? "Application Withdrawn" : "Applied Successfully", {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+    });
+  };
+
   return (
     <div>
+      <ToastContainer />
       <div className="job-card">
         <div>
           <div className="job-company">
@@ -25,7 +44,9 @@ const JobsCard = ({ job }) => {
         <h3>{job.position}</h3>
         <p>{job.description}</p>
         <div className="btn-apply">
-          <button>Apply Now</button>
+          <button onClick={handleApplyNow}>
+            {applied ? "Applied" : "Apply Now"}
+          </button>
           <button className="more">Read More</button>
         </div>
       </div>
