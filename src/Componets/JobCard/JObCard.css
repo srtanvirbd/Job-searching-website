@@ -1,0 +1,84 @@
+/* JObCard.css */
+* {
+  margin: 0;
+}
+.job-card {
+  width: 382px;
+  height: 318px;
+  border: 1px solid #252525;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.job-card .job-company {
+  display: flex;
+}
+.job-card:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-card > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.job-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.job-card h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin: 0;
+}
+
+.job-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.job-card h3 {
+  font-size: 16px;
+  margin: 12px 0;
+}
+
+.job-card svg {
+  color: #555;
+  cursor: pointer;
+}
+.job-company .logo-name {
+  margin-left: 0px;
+  margin-bottom: 8px;
+}
+.job-card .tittle {
+  margin-left: 1px;
+  margin-bottom: 20px;
+}
+.job-company p {
+  margin-left: 18px;
+  gap: 20px;
+}
+.usa h2 {
+  margin: 0;
+}
+
+.job-card button {
+  background-color: #20c6b1;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.job-card .more {
+  color: black;
+  background: none;
+  border: 1px solid #20c6b1;
+}

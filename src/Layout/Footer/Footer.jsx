@@ -34,16 +34,16 @@ const Footer = () => {
               <a href="https://www.facebook.com/">
                 <FaFacebook />
               </a>
-              <a href="#">
+              <a href="https://twitter.com/?lang=en">
                 <FaTwitter />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/">
                 <FaLinkedin />
               </a>
-              <a href="#">
+              <a href="https://www.google.com/">
                 <FaGooglePlus />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/">
                 <FaInstagram />
               </a>
             </div>

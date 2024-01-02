@@ -1,0 +1,20 @@
+.job-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+@media (max-width: 768px) {
+  /* For tablets, display two cards in a row */
+  .job-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For mobile, display one card in a row */
+  .job-list {
+    grid-template-columns: 1fr;
+  }
+}

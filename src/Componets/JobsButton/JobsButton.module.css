@@ -1,0 +1,16 @@
+.jobbtn {
+  display: flex;
+  padding: 14px 2px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #20c6b1;
+  color: white;
+  text-decoration: none;
+  width: 279px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+a:hover {
+  background: #59dfcd;
+}
