@@ -9,10 +9,8 @@ const Jobcard = ({ job }) => {
   const [applied, setApplied] = useState(false);
 
   const handleApply = () => {
-    // Toggle the applied state
     setApplied((prevApplied) => !prevApplied);
 
-    // Show toast notification
     toast.success(applied ? "Application Withdrawn" : "Applied Successfully", {
       position: "top-center",
       autoClose: 3000,
@@ -47,7 +45,6 @@ const Jobcard = ({ job }) => {
         <h3>{job.position}</h3>
         <p>{job.description}</p>
         <div className="btn-apply">
-          {/* Change button text based on the applied state */}
           <button onClick={handleApply}>
             {applied ? "Applied" : "Apply Now"}
           </button>

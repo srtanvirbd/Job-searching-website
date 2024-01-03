@@ -2,7 +2,7 @@ const Favorite = () => {
   return (
     <div>
       <div className="container">
-        <h2>No jobs Yet added</h2>
+        <h2>No Job Yet Added</h2>
       </div>
     </div>
   );

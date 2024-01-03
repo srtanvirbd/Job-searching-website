@@ -8,15 +8,22 @@
 body {
   font-family: "Nunito Sans", sans-serif;
 }
-
+.nav-head {
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  background-color: #ffffff;
 }
-
+.nav .logo:hover {
+  background: none;
+}
 .nav > .nav-header {
   display: inline;
 }
@@ -132,7 +139,7 @@ body {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
+    height: calc(15vh - 50px);
     overflow-y: auto;
   }
   .nav-links a.active {
