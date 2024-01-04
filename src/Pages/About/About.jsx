@@ -6,10 +6,7 @@ const About = () => {
       <div className="container">
         <div className={style.about}>
           <div className={style.abtimg}>
-            <img
-              src="https://github.com/srtanvirbd/Job-searching-website/blob/main/public/undraw_career_progress_ivdb.png"
-              alt=""
-            />
+            <img src="./undraw_career_progress_ivdb.png" alt="" />
           </div>
           <h2 className={style.abt}>About Us</h2>
           <p>
