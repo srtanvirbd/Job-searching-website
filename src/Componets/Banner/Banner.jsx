@@ -6,7 +6,7 @@ const Banner = () => {
     <div>
       <div className="banner">
         <div className="container">
-          <div className="job">
+          <div className="job" data-aos="fade-right" data-aos-duration="1500">
             <h3>
               We Have <span>208,000+</span> Live Jobs
             </h3>
@@ -21,7 +21,7 @@ const Banner = () => {
 
             <NavLink to={"signup"}>Explore</NavLink>
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-duration="2000">
             <img
               className="man-img"
               src="../../../public/handsome-black-man-speaks-by-phone-smiles.png"

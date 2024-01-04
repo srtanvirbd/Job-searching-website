@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 import { useEffect, useState } from "react";
-import Jobcard from "../Jobcard/Jobcard";
 import "./JobList.css";
+import Jobcard from "../JobCard/JobCard";
 
 const JobList = () => {
   const [jobs, setJobs] = useState([]);

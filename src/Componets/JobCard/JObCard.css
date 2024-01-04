@@ -8,6 +8,7 @@
   border-radius: 8px;
   overflow: hidden;
   transition: box-shadow 0.3s ease-in-out;
+  z-index: -1;
 }
 .job-card .job-company {
   display: flex;

@@ -24,7 +24,11 @@ const Jobcard = ({ job }) => {
   return (
     <div>
       <ToastContainer />
-      <div className="job-card">
+      <div
+        className="job-card"
+        data-aos="zoom-in-right"
+        data-aos-duration="1000"
+      >
         <div>
           <div className="job-company">
             <div>
