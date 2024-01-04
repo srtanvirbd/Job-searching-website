@@ -9,7 +9,7 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 .nav-head {
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   position: fixed;
   width: 100%;

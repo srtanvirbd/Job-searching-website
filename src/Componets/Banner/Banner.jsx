@@ -6,7 +6,7 @@ const Banner = () => {
     <div>
       <div className="banner">
         <div className="container">
-          <div className="job" data-aos="fade-right" data-aos-duration="1500">
+          <div className="job" data-aos="fade-right" data-aos-duration="15ya00">
             <h3>
               We Have <span>208,000+</span> Live Jobs
             </h3>

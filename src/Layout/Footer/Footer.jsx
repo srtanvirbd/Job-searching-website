@@ -31,13 +31,13 @@ const Footer = () => {
               Jibika and embark on your journey towards fulfilling employment
             </p>
             <div className={styles.icons}>
-              <a href="https://www.facebook.com/">
+              <a href="https://www.facebook.com/tanvirbdlx/">
                 <FaFacebook />
               </a>
               <a href="https://twitter.com/?lang=en">
                 <FaTwitter />
               </a>
-              <a href="https://www.linkedin.com/">
+              <a href="https://www.linkedin.com/in/sydur-rahman-tanvir-106575175/">
                 <FaLinkedin />
               </a>
               <a href="https://www.google.com/">
