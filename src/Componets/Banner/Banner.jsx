@@ -24,7 +24,7 @@ const Banner = () => {
           <div data-aos="fade-left" data-aos-duration="2000">
             <img
               className="man-img"
-              src="./handsome-black-man-speaks-by-phone-smiles.png"
+              src="/handsome-black-man-speaks-by-phone-smiles.png"
               alt=""
             />
           </div>
