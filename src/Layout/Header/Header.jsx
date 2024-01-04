@@ -12,7 +12,7 @@ const Header = () => {
               <div className="nav-title">
                 <NavLink className={"logo"} to={"/"}>
                   <img
-                    src="../../../public/Screenshot 2024-01-01 101302.png"
+                    src="https://github.com/srtanvirbd/Job-searching-website/blob/main/public/Screenshot%202024-01-01%20101302.png"
                     alt=""
                   />
                 </NavLink>

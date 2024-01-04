@@ -19,7 +19,7 @@ const Footer = () => {
           <div className={`${styles["footer-left"]} col-md-4 col-sm-6`}>
             <img
               className={styles.footerLogo}
-              src="../../../public/Screenshot 2024-01-01 101302.png"
+              src="https://github.com/srtanvirbd/Job-searching-website/blob/main/public/Screenshot%202024-01-01%20101302.png"
               alt=""
             />
             <p className={styles.about}>
